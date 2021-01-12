@@ -2,6 +2,7 @@ const http = require('http');
 const port = process.env.PORT || 3000;
 require("newrelic");
 var lt = require( 'load-test' );
+var heapdump = require('heapdump');
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   const msg = 'Hello Node!\n'
