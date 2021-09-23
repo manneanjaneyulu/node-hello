@@ -10,6 +10,7 @@ const server = http.createServer((req, res) => {
   res.end(msg);
 });
 
+
 heapdump.writeSnapshot(function(err, filename) {
   console.log('dump written to', filename);
 });
